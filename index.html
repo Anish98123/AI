@@ -3,40 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About AI</title>
+    <title>Love for Puza</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            overflow: hidden;
+            background-color: #fce4ec; /* Background color */
         }
+
         h1 {
-            color: #3498db;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2em;
+            animation: fadeIn 3s forwards; /* Text animation */
         }
-        p {
-            line-height: 1.6;
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ff1493; /* Heart color */
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            animation: floatHeart linear infinite;
+        }
+
+        @keyframes floatHeart {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .message {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 30vh;
+            position: relative;
+            animation: slideIn 2s forwards; /* Message animation */
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the World of AI</h1>
-    
-    <p>Artificial Intelligence (AI) is a branch of computer science that aims to create intelligent machines capable of performing tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding.</p>
-    
-    <p>AI technologies are used in various fields, including natural language processing, image recognition, machine learning, and robotics. As AI continues to advance, it has a profound impact on industries, society, and our daily lives.</p>
+    <div class="heart" style="top: 60vh; left: 20vw;"></div>
+    <div class="heart" style="top: 40vh; left: 40vw;"></div>
+    <div class="heart" style="top: 20vh; left: 60vw;"></div>
+    <div class="heart" style="top: 80vh; left: 80vw;"></div>
 
-    <h2>Key Concepts in AI</h2>
-    
-    <ul>
-        <li><strong>Machine Learning:</strong> A subset of AI that enables machines to learn from data and improve their performance over time without explicit programming.</li>
-        <li><strong>Neural Networks:</strong> Computational models inspired by the human brain, used in deep learning to recognize patterns and make decisions.</li>
-        <li><strong>Natural Language Processing (NLP):</strong> AI's ability to understand, interpret, and generate human language.</li>
-    </ul>
+    <h1>Love for Puza</h1>
 
-    <p>Explore the fascinating world of AI and its potential to shape the future!</p>
-
-    <footer>
-        <p>Created with ❤️ by Anish Paudel</p>
-    </footer>
-Mamu k hernu bhako 😂😂
+    <div class="message">I Love You Puza</div>
+    <div class="message" style="animation-delay: 1s;">I Love You Tika</div>
+    <div class="message" style="animation-delay: 2s;">I Love You Kichkandi</div>
 </body>
 </html>
